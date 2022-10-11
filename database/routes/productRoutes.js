@@ -5,6 +5,6 @@ const router = Router();
 
 router.get('/products', getProducts);
 
-router.get('/products-search/', getProductsBySearchParams)
+router.get('/productsBySearchBar', getProductsBySearchParams)
 
 module.exports = router;
