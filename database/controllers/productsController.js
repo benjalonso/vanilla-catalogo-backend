@@ -1,7 +1,6 @@
 const Product = require("../models/productsModel");
 const { Op } = require("sequelize");
 
-
 // const getProducts = async (req, res) => {
 const getProducts = async (req, res) => {
   try {
@@ -12,7 +11,6 @@ const getProducts = async (req, res) => {
     };
     const products = await Product.findAndCountAll(options);
     res.json(products);
-
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
