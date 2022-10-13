@@ -17,10 +17,8 @@ const getProducts = async (req, res) => {
 };
 const getProductsByCategory = async (req, res) => {
   try {
-    const { page, size = 8, category } = req.query;
+    const {category } = req.query;
     let options = {
-      limit: parseInt(size),
-      offset: page * size,
       where: {
         category: category,
       },
