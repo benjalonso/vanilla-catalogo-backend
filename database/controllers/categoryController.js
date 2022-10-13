@@ -1,6 +1,5 @@
 const Category = require("../models/categoriesModel");
 const Product = require("../models/productsModel");
-const { Op } = require("sequelize");
 
  const getCategory = async (req, res) => {
     try {

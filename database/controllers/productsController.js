@@ -15,6 +15,22 @@ const getProducts = async (req, res) => {
     return res.status(500).json({ message: error.message });
   }
 };
+const getProductsByCategory = async (req, res) => {
+  try {
+    const { page, size = 8, category } = req.query;
+    let options = {
+      limit: parseInt(size),
+      offset: page * size,
+      where: {
+        category: category,
+      },
+    };
+    const products = await Product.findAndCountAll(options);
+    res.json(products);
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+};
 const getProductsBySearchParams = async (req, res) => {
   try {
     const { page, size = 8, name } = req.query;
@@ -32,4 +48,4 @@ const getProductsBySearchParams = async (req, res) => {
   }
 };
 
-module.exports = { getProducts, getProductsBySearchParams };
+module.exports = { getProducts, getProductsBySearchParams, getProductsByCategory };
