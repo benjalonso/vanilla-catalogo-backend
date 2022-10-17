@@ -1,3 +1,6 @@
+/**
+ *  Este archivo contiene la configuración de express 
+ */
 const express = require('express');
 const productsRouter = require('./database/routes/productRoutes');
 const cors = require('cors');

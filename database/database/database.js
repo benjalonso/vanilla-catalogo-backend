@@ -1,4 +1,7 @@
-// Aquí hacemos la conexión de sequelize con la base de datos!
+/**
+ * Configuracion de la base de datos
+ *  - Se usa el archivo database.js que se encuentra en la carpeta database
+ */
 const Sequelize = require('sequelize');
 require('dotenv').config();
 

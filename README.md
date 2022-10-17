@@ -1,6 +1,7 @@
 ## Nodejs Sequelize RESTAPI MySQL
 
 Esta es una simple REST API utilizando Javascript y MySQL
+
 - nodejs
 - express
 - mysql

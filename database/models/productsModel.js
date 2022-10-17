@@ -1,3 +1,9 @@
+/**
+ * Archivo que define el modelo de datos de los productos
+ * - Se usa el archivo database.js que se encuentra en la carpeta database
+ * - Se usa el metodo define() para definir el modelo de datos
+ * 
+ */
 const sequelize = require("../database/database");
 const { DataTypes } = require("sequelize");
 

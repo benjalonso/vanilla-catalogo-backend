@@ -1,0 +1,22 @@
+{
+    "pluggins": [],
+    "source" : {
+        "include": [
+            "database",
+            "index.js",
+            "express_config.js"
+        ],
+        "includePattern": ".js$",
+        "excludePattern": "(node_modules|docs)"
+    },
+    "templates" : {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "opts": {
+        "destination": "./documentation",
+        "recurse": true,
+        "verbose": true
+    }
+
+}
