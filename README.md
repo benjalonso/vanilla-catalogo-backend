@@ -1,6 +1,6 @@
 ## Nodejs Sequelize RESTAPI MySQL
 
-Esta es una simple REST API utilizando Javascript y MySQL
+Esta es una simple REST API utilizando Javascript y MySQL, realizada con el entorno de ejecución Node JS, con el framework Express JS y el orm Sequalize. La finalidad de este programa es para consumir los datos que contiene informacion de productos para ser utilizados por el frontend y mostrados al usuario.
 
 - nodejs
 - express
